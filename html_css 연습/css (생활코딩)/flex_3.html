@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+            
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left:20px;
+        }
+        footer{
+            border-top:1px solid gray ;
+            padding-left:20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Cascading Style Sheets (CSS) is a simple mechanism 
+                for adding style (e.g., fonts, colors, spacing) to Web 
+                documents.These pages contain information on how to 
+                learn and use CSS and on available software. They also 
+                contain news from the CSS working group
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+           <a href=" https://opentutorils.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+
+    </article>
+    <input type="button" value="fetch" 
+    onclick =" /*fetch('html.txt').then(function(response){
+        response.text().then(function(text){
+            alert(text);
+            document.querySelector('article').innerHTML = text;
+        })
+    })
+    */
+    /*function callbackme(){
+        console.log('response end');
+    }
+    callbackme = function(){
+        console.log('response end');
+    }*/
+
+    // 서버에서 그거 다읽으면 callbackme함수를 실행시켜줘~
+    // 비동기적으로 실행됨 ( 실행되는 동안 다른코드도 실행 병렬적)
+    fetch('javascript').then(function(response){
+        //response를 인자로받음 ( 이게머임? )
+        console.log(response.status);
+        if(response.status =='404'){
+            alert('Not Found')
+        }
+    });
+    console.log(1);
+    console.log(2);
+    ">
+</body>
+</html>

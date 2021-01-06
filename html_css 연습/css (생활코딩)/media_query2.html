@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            display:flex;
+
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+            
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left:20px;
+        }
+        footer{
+            border-top:1px solid gray ;
+            padding-left:20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis:150px;
+            flex-shrink: 0;
+        }
+        @media(max-width:500px){
+            .content{
+                flex-direction: column;
+            }
+            .content nav, .content aside{
+                border : none;
+                flex-basis:auto;
+                flex-shrink: 0;
+            }
+            nav{
+                order:1;
+            }
+            main{
+                order:0;
+            }
+            aside{
+                order:2;
+            }
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Cascading Style Sheets (CSS) is a simple mechanism 
+                for adding style (e.g., fonts, colors, spacing) to Web 
+                documents.These pages contain information on how to 
+                learn and use CSS and on available software. They also 
+                contain news from the CSS working group Cascading Style Sheets (CSS) is a simple mechanism 
+                for adding style (e.g., fonts, colors, spacing) to Web 
+                documents.These pages contain information on how to 
+                learn and use CSS and on available software. They also 
+                contain news from the CSS working group
+                Cascading Style Sheets (CSS) is a simple mechanism 
+                for adding style (e.g., fonts, colors, spacing) to Web 
+                documents.These pages contain information on how to 
+                learn and use CSS and on available software. They also 
+                contain news from the CSS working group
+                Cascading Style Sheets (CSS) is a simple mechanism 
+                for adding style (e.g., fonts, colors, spacing) to Web 
+                documents.These pages contain information on how to 
+                learn and use CSS and on available software. They also 
+                contain news from the CSS working group
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+           <a href=" https://opentutorils.org/course/1">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
